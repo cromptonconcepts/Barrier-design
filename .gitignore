@@ -1,15 +1,52 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
 # Local Python environments
 .venv/
 venv/
 env/
 ENV/
+.python-version
 
-# Python cache
+# Python cache and tooling
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 
-# Editor and OS files
+# Build, test, and coverage artifacts
+build/
+dist/
+out/
+htmlcov/
+.coverage
+coverage.xml
+
+# Local runtime data
+logs/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+chroma_db/
+
+# Front-end dependencies
+node_modules/
+
+# IDE/editor
 .vscode/
 .idea/
+
+# OS files
 .DS_Store
 Thumbs.db
+desktop.ini
